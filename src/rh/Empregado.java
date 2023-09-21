@@ -14,9 +14,9 @@ public class Empregado extends Pessoa{
 		super.setNome(nome);
 		super.setEndereco(endereco);
 		super.setTelefone(telefone);
-		this.codigoSetor = codigoSetor;
-		this.salarioBase = salarioBase;
-		this.imposto = imposto;
+		this.setCodigoSetor(codigoSetor);
+		this.setSalarioBase(salarioBase);
+		this.setImposto(imposto);
 	}
 	
 	public int getCodigoSetor() {

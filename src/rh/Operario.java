@@ -16,8 +16,8 @@ public class Operario extends Empregado{
 		super.setCodigoSetor(codigoSetor);
 		super.setSalarioBase(salarioBase);
 		super.setImposto(imposto);
-		this.valorProducao = valorProducao;
-		this.comissao = comissao;
+		this.setValorProducao(valorProducao);
+		this.setComissao(comissao);
 	}
 	
 	public double getValorProducao(){

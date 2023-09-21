@@ -15,7 +15,7 @@ public class Administrador extends Empregado{
 		super.setCodigoSetor(codigoSetor);
 		super.setSalarioBase(salarioBase);
 		super.setImposto(imposto);
-		this.ajudaDeCusto = ajudaDeCusto;
+		this.setAjudaDeCusto(ajudaDeCusto);
 	}
 	
 	public double getAjudaDeCusto() {

@@ -16,8 +16,8 @@ public class Vendedor extends Empregado{
 		super.setCodigoSetor(codigoSetor);
 		super.setSalarioBase(salarioBase);
 		super.setImposto(imposto);
-		this.valorVendas = valorVendas;
-		this.comissao = comissao;
+		this.setValorVendas(valorVendas);
+		this.setComissao(comissao);
 	}
 	
 	public double getValorVendas() {

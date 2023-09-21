@@ -11,9 +11,9 @@ public class Pessoa {
 	}
 	
 	public Pessoa(String nome, String endereco, String telefone) {
-		this.nome = nome;
-		this.endereco = endereco;
-		this.telefone = telefone;
+		this.setNome(nome);
+		this.setEndereco(endereco);
+		this.setTelefone(telefone);
 	}
 	
 	public String getNome() {

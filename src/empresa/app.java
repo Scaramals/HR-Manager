@@ -26,22 +26,18 @@ public class app {
 					emp[i] = new Empregado();
 					
 					String nome = JOptionPane.showInputDialog("Qual o seu nome?");
-					emp[i].setNome(nome);
-					
+				
 					String endereco = JOptionPane.showInputDialog("Qual o seu endereco?");
-					emp[i].setEndereco(endereco);
 					
 					String telefone = JOptionPane.showInputDialog("Qual o seu telefone?");
-					emp[i].setTelefone(telefone);
 					
 					int codigoSetor = Integer.parseInt(JOptionPane.showInputDialog("Qual o seu numero do seu setor da empresa?"));
-					emp[i].setCodigoSetor(codigoSetor);
 					
 					double salarioBase = Double.parseDouble(JOptionPane.showInputDialog("Qual o seu salario base?"));
-					emp[i].setSalarioBase(salarioBase);
 					
 					double imposto = Double.parseDouble(JOptionPane.showInputDialog("Quantos porcento de imposto?"));
-					emp[i].setImposto(imposto);
+					
+					emp[i] = new Empregado(nome,endereco,telefone,codigoSetor,salarioBase,imposto);
 					
 				}
 				for(int i = 0; i<emp.length; i++) {
@@ -58,25 +54,20 @@ public class app {
 						adm[i] = new Administrador();
 						
 						String nome = JOptionPane.showInputDialog("Qual o seu nome?");
-						adm[i].setNome(nome);
 						
 						String endereco = JOptionPane.showInputDialog("Qual o seu endereco?");
-						adm[i].setEndereco(endereco);
 						
 						String telefone = JOptionPane.showInputDialog("Qual o seu telefone?");
-						adm[i].setTelefone(telefone);
 						
 						int codigoSetor = Integer.parseInt(JOptionPane.showInputDialog("Qual o seu numero do seu setor da empresa?"));
-						adm[i].setCodigoSetor(codigoSetor);
 						
 						double salarioBase = Double.parseDouble(JOptionPane.showInputDialog("Qual o seu salario base?"));
-						adm[i].setSalarioBase(salarioBase);
 						
 						double imposto = Double.parseDouble(JOptionPane.showInputDialog("Quantos porcento de imposto?"));
-						adm[i].setImposto(imposto);
 						
 						double ajudaDeCusto = Double.parseDouble(JOptionPane.showInputDialog("Quanto foi a sua ajuda de custo?"));
-						adm[i].setAjudaDeCusto(ajudaDeCusto);
+	
+						adm[i] = new Administrador(nome,endereco,telefone,codigoSetor,salarioBase,imposto,ajudaDeCusto);
 					}
 					
 					for(int i = 0; i<adm.length; i++) {
@@ -90,28 +81,24 @@ public class app {
 							op[i] = new Operario();
 							
 							String nome = JOptionPane.showInputDialog("Qual o seu nome?");
-							op[i].setNome(nome);
+							
 							
 							String endereco = JOptionPane.showInputDialog("Qual o seu endereco?");
-							op[i].setEndereco(endereco);
 							
 							String telefone = JOptionPane.showInputDialog("Qual o seu telefone?");
-							op[i].setTelefone(telefone);
+							
 							
 							int codigoSetor = Integer.parseInt(JOptionPane.showInputDialog("Qual o seu numero do seu setor da empresa?"));
-							op[i].setCodigoSetor(codigoSetor);
-							
+														
 							double salarioBase = Double.parseDouble(JOptionPane.showInputDialog("Qual o seu salario base?"));
-							op[i].setSalarioBase(salarioBase);
-							
+														
 							double imposto = Double.parseDouble(JOptionPane.showInputDialog("Quantos porcento de imposto?"));
-							op[i].setImposto(imposto);
 							
 							double valorProducao = Double.parseDouble(JOptionPane.showInputDialog("Quanto voce vendeu?"));
-							op[i].setValorProducao(valorProducao);
 							
 							double comissao = Double.parseDouble(JOptionPane.showInputDialog("Qual a porcentagem você vai ganhar?"));
-							op[i].setComissao(comissao);
+							
+							op[i] = new Operario(nome,endereco,telefone,codigoSetor,salarioBase,imposto,valorProducao,comissao);
 						}	
 						
 						for(int i = 0; i<op.length; i++) {
@@ -126,28 +113,23 @@ public class app {
 								ved[i] = new Vendedor();
 								
 								String nome = JOptionPane.showInputDialog("Qual o seu nome?");
-								ved[i].setNome(nome);
+								
 								
 								String endereco = JOptionPane.showInputDialog("Qual o seu endereco?");
-								ved[i].setEndereco(endereco);
-								
+																
 								String telefone = JOptionPane.showInputDialog("Qual o seu telefone?");
-								ved[i].setTelefone(telefone);
-								
+														
 								int codigoSetor = Integer.parseInt(JOptionPane.showInputDialog("Qual o seu numero do seu setor da empresa?"));
-								ved[i].setCodigoSetor(codigoSetor);
-								
+																
 								double salarioBase = Double.parseDouble(JOptionPane.showInputDialog("Qual o seu salario base?"));
-								ved[i].setSalarioBase(salarioBase);
-								
+																
 								double imposto = Double.parseDouble(JOptionPane.showInputDialog("Quantos porcento de imposto?"));
-								ved[i].setImposto(imposto);
-								
+																
 								double valorVendas = Double.parseDouble(JOptionPane.showInputDialog("Quanto voce vendeu?"));
-								ved[i].setValorVendas(valorVendas);
-								
+																
 								double comissao = Double.parseDouble(JOptionPane.showInputDialog("Qual a porcentagem você vai ganhar?"));
-								ved[i].setComissao(comissao);
+								
+								ved[i] = new Vendedor(nome,endereco,telefone,codigoSetor,salarioBase,imposto,valorVendas,comissao);
 							}	
 							
 							for(int i = 0; i<ved.length; i++) {
@@ -170,19 +152,16 @@ public class app {
 					forne[i] = new Fornecedor();
 					
 					String nome = JOptionPane.showInputDialog("Qual o seu nome?");
-					forne[i].setNome(nome);
 					
 					String endereco = JOptionPane.showInputDialog("Qual o seu endereco?");
-					forne[i].setEndereco(endereco);
 					
 					String telefone = JOptionPane.showInputDialog("Qual o seu telefone?");
-					forne[i].setTelefone(telefone);
 					
 					double valorCredito = Double.parseDouble(JOptionPane.showInputDialog("Qual o seu credito atual?"));
-					forne[i].setValorCredito(valorCredito);
 					
 					double valorDivida = Double.parseDouble(JOptionPane.showInputDialog("Quanto voce tem de divida?"));
-					forne[i].setValorDivida(valorDivida);
+					
+					forne[i] = new Fornecedor(nome,endereco,telefone,valorCredito,valorDivida);
 				}
 				for(int i = 0; i<forne.length; i++) {
 					JOptionPane.showMessageDialog(null, forne[i].toString());

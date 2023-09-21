@@ -13,8 +13,8 @@ public class Fornecedor extends Pessoa{
 		super.setNome(nome);
 		super.setEndereco(endereco);
 		super.setTelefone(telefone);
-		this.valorCredito = valorCredito;
-		this.valorDivida = valorDivida;
+		this.setValorCredito(valorCredito);
+		this.setValorDivida(valorDivida);
 	}
 	
 	public double getValorCredito() {
