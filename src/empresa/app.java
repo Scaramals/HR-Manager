@@ -1,11 +1,15 @@
 package empresa;
+import fabricas.*;
+import java.util.ArrayList;
+import java.util.List;
+
 import javax.swing.JOptionPane;
-import rh.Empregado;
-import rh.Pessoa;
+
 import rh.Administrador;
+import rh.Empregado;
+import rh.Fornecedor;
 import rh.Operario;
 import rh.Vendedor;
-import rh.Fornecedor;
 
 public class app {
 
@@ -13,6 +17,8 @@ public class app {
 		
 		int tipoTrabalhador = Integer.parseInt(JOptionPane.showInputDialog("Digite qual tipo de trabalhador você quer cadastrar? 1-Empregado ou 2-Fornecedor"));
 		int tipoEmpregado;
+		
+		List<Empregado> lempregado = new ArrayList<>();
 		
 		if(tipoTrabalhador == 1) {
 			tipoEmpregado = Integer.parseInt(JOptionPane.showInputDialog("Digite qual tipo de Empregado você quer cadastrar? 1-Empregado padrão, 2-Administrador, 3-Operario ou 4-Vendedor"));
@@ -38,6 +44,8 @@ public class app {
 					double imposto = Double.parseDouble(JOptionPane.showInputDialog("Quantos porcento de imposto?"));
 					
 					emp[i] = new Empregado(nome,endereco,telefone,codigoSetor,salarioBase,imposto);
+					
+					lempregado.add(emp[i]);
 					
 				}
 				for(int i = 0; i<emp.length; i++) {
